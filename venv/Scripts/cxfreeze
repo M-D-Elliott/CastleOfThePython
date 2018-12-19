@@ -1,0 +1,6 @@
+#!C:\Users\Marcus\Desktop\CastleofthePython7062018p2\venv\Scripts\python.exe
+
+from cx_Freeze import main
+
+main()
+
