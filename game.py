@@ -165,15 +165,16 @@ def game():
            position is updated only every other cycle. When the player moves, all
            other characters are given one movement and updated as well."""
         for event in pygame.event.get():
-            if ((event.type == QUIT or event.type == KEYDOWN) and
-                    event.key == K_ESCAPE):
+            if event.type == QUIT:
                 pygame.quit()
                 sys.exit()
-
             if event.type == KEYDOWN:
                 # if not start:
                 start = time()
                 move = True
+                if event.key == K_ESCAPE:
+                    pygame.quit()
+                    sys.exit()
                 if event.key == K_RETURN or event.key == K_p:
                     paused = not paused
                 if event.key == K_w:

@@ -19,5 +19,4 @@ cx_Freeze.setup(
     executables=executables,
     version="0.3"
 )
-
 # python setup.py bdist_msi
