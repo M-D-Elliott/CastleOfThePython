@@ -1,5 +1,5 @@
 import pygame
-from root import root
+from globals import root
 
 from scripts.objects.objects import Object
 

@@ -6,7 +6,7 @@ from scripts.objects.objects import Object
 from scripts.objects.moving_objects import MovingObject
 from scripts.objects.weapons import Projectile
 from scripts.objects.weapons import Melee
-from root import root
+from globals import root
 
 
 class Character(MovingObject):

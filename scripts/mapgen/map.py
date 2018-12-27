@@ -1,11 +1,12 @@
 import random
 from operator import itemgetter
 import math
+import os
 
 from scripts.mapgen.draw import Draw
 from scripts.mapgen.coords import Coords
 from scripts.mapgen.ascii import ascii
-from root import root
+from globals import temps_folder
 
 
 class Map(dict):
@@ -22,6 +23,7 @@ class Map(dict):
         self.update({'name': name})
         self.update({'height': h - 1, 'length': l - 1, 'area': h * l})
         self.update({'center': Coords.center(l, h)})
+        self.MAP = ''
 
     def __setitem__(self, key, item):
         self.__dict__[key] = item
@@ -87,7 +89,6 @@ class Map(dict):
         area = []
         space_open = True
         doors = 0
-        position = (5, 5)
         min_size = 8
 
         if inp_position == 'random':
@@ -135,7 +136,6 @@ class Map(dict):
                 self[coordinate] = 'EmptyFloor'
             for coordinate in border:
                 self[coordinate] = 'Wall'
-                x, y = coordinate
                 door_calc = random.randint(door_chance, door_roll) if door_chance < door_roll else door_roll
                 if door_calc == door_roll and doors > 0:
                     door_chance = 1
@@ -174,12 +174,8 @@ class Map(dict):
 
             # and establishes variables to be used:
             scan_size = 30
-            scan_x = range(0, 0)
-            scan_y = range(0, 0)
             x_door = False
             y_door = False
-            x_inc = 0
-            y_inc = 0
 
             # here we check the position of the door relative to empty grid space,
             # which is known as 'CastleWall'. This allows determination of the door's
@@ -265,12 +261,7 @@ class Map(dict):
                         diff_y = abs(Y - y)
                         X_door = bool(self[(X - 2, Y)] == 'CastleWall' or self[(X + 2, Y)] == 'CastleWall')
                         Y_door = bool(self[(X, Y - 2)] == 'CastleWall' or self[(X, Y + 2)] == 'CastleWall')
-                        diag_door = bool(random.randint(0, 1))
                         diag_door = False
-                        clearance_x = range(0, 0)
-                        clearance_y = range(0, 0)
-                        x_proportion = (diff_x/diff_y) if diff_y else 0
-                        y_proportion = (diff_y/diff_x) if diff_x else 0
 
                         if diff_y == 0:
                             hall_type = 'direct_x'
@@ -313,11 +304,8 @@ class Map(dict):
             hall_type = best_door[1]
             diff_x = abs(X - x)
             diff_y = abs(Y - y)
-            x_proportion = 0
-            y_proportion = 0
             x_inc = 1 if x < X else -1
             y_inc = 1 if y < Y else -1
-            # print(hall_type, x, X, y, Y)
 
             # now we increment the x and/or y value, starting from the
             # initial door, toward the terminal X and/or Y.
@@ -420,8 +408,8 @@ class Map(dict):
                 break
         return coordinates
 
-    def finalize(self):
-        """This turns the map dictionary into a .txt file composed of the ascii
+    def convert_to_text(self):
+        """This turns the map dictionary into a text string composed of the ascii
            characters defined in ascii's, the dictionary, keys."""
         all_doors = [k for k, v in self.items() if v == 'Door']
         for door in all_doors:
@@ -435,13 +423,18 @@ class Map(dict):
                 self[(X, Y)] = 'Wall'
         length = self['length']
         height = self['height']
-        MAP = ''
         for y in range(height):
             for x in range(length):
-                MAP += ascii[self[(x, y)]]
+                self.MAP += ascii[self[(x, y)]]
                 if x == length - 1:
-                    MAP += '\n'
-        filename = root + "/level/%s.txt" % self.name
-        with open(filename, "w") as f:
-            f.write(MAP)
+                    self.MAP += '\n'
+
+    def finalize(self):
+        """This turns the text string composed by convert_to_text() as self.MAP into a .txt file."""
+        self.convert_to_text()
+        file_name = '% s.txt' % self.name
+        file = open(os.path.join(temps_folder, file_name), 'w+')
+        file.write(self.MAP)
+        file.close()
+        del file
         del self

@@ -4,7 +4,7 @@ from PIL import Image
 
 from scripts.objects.moving_objects import MovingObject
 from scripts.tools.spritesheets import SpriteSheet
-from root import root
+from globals import root
 
 
 class Weapon(MovingObject):

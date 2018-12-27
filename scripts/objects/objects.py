@@ -1,6 +1,6 @@
 import pygame
 
-from root import root
+from globals import root
 
 
 class Object(pygame.sprite.Sprite):

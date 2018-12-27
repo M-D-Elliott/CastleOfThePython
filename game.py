@@ -1,16 +1,17 @@
 import pygame
 from pygame.locals import *
 from pygame.locals import Rect
+import os
 import sys
 from time import time
 import random
 
 from scripts.mapgen.level import Level
-from scripts.databases.MonsterDBInitializer import MonsterDB
+from scripts.databases.MonsterDBInitializer import MonsterTable
 from scripts.floorbuild.randfloor import random_diamond_floor
-# from scripts.windows.text_window import TextWindow
 from scripts.windows.draw_text import draw_text
-from root import root
+from globals import root, temps_folder
+from temps import delete_this_dir
 
 screen_x = 800
 screen_y = 600
@@ -18,10 +19,13 @@ SCREEN_SIZE = (screen_x, screen_y)  # resolution of the game
 one_square = 25
 x_center = screen_x / 2
 y_center = screen_y / 2
+# add a temps folder so that maps can be written.
 
-global FPS
-# global clock
-global time_spent
+
+def exit_game():
+    pygame.quit()
+    delete_this_dir(temps_folder)
+    sys.exit()
 
 
 def rel_rect(actor, campy):
@@ -82,7 +86,7 @@ pygame.init()
 #  the pygame screen is established and filled with a rect. then the BG is loaded.
 screen = pygame.display.set_mode(SCREEN_SIZE, 32)
 screen_rect = screen.get_rect()
-background = pygame.image.load(root + "/world/Background.png").convert_alpha()
+background = pygame.image.load(os.path.join(root, "world\Background.png")).convert_alpha()
 background_rect = background.get_rect()
 
 #  a clock is initialized to track FPS,
@@ -117,22 +121,16 @@ def game():
     #  camera is now centered around extracted player.
     camera = Camera(screen, player.rect, level.get_size()[0], level.get_size()[1])
 
-    #  Now the monster and spawner lists are pulled to this scope,
-    #  including the max_monsters for the level.
-    #  Also a boolean for whether the player successfully
-    #  performs a 'move', e.g. attack or left. This is used
-    #  to increment up a monster's internal tick so they can act.
+    #  The monster and spawner lists contain the instantiations of the monster objects.
+    #  max_monsters is set.
     monster_list = level.monster_list
     spawner_list = level.spawner_list
     max_monsters = level.max_monsters
-    max_monsters = 20
 
     #  Checks the power min and power max for the stage and queries for monsters within it.
     p_min = level.power_min
     p_max = level.power_max
-    p_min = 0
-    p_max = 50
-    monster_data = MonsterDB.select().where(MonsterDB.power <= p_max).where(MonsterDB.power >= p_min)
+    monster_data = MonsterTable.select().where(MonsterTable.power <= p_max).where(MonsterTable.power >= p_min)
     monster_types = []
     #  Attaches monster data to a list of types
     #  that can spawn on this level:
@@ -143,12 +141,10 @@ def game():
     del monster_data
 
     #  the state of auto_repeat is True after input_delay has passed on player input.
-    auto_repeat = False
     up = down = left = right = attack = False
-    pivot = strafe = w_toggle = enter = False
+    pivot = strafe = w_toggle = False
 
     start = 0
-    reset = False
     #  move is applied so that one input passes.
     # and the game is started paused.
     move = paused = True
@@ -166,15 +162,13 @@ def game():
            other characters are given one movement and updated as well."""
         for event in pygame.event.get():
             if event.type == QUIT:
-                pygame.quit()
-                sys.exit()
+                exit_game()
             if event.type == KEYDOWN:
                 # if not start:
                 start = time()
                 move = True
                 if event.key == K_ESCAPE:
-                    pygame.quit()
-                    sys.exit()
+                    exit_game()
                 if event.key == K_RETURN or event.key == K_p:
                     paused = not paused
                 if event.key == K_w:
@@ -213,14 +207,10 @@ def game():
                 if event.key == K_RCTRL:
                     pivot = False
                 if not up and not left and not down and not right and not attack:
-                    auto_repeat = False
-                    # start = 0
+                    start = 0
 
         FPS = round(2 + len(monster_list) / 12) * 30
-        time_spent = tps(clock, FPS)
-        # parallax background option:
-        # a_size = ((screen_rect.w // background_rect.w + 1) * background_rect.w,
-        #          (screen_rect.h // background_rect.h + 1) * background_rect.h)
+        tps(clock, FPS)
         for x in range(0, a_size[0], background_rect.w):
             for y in range(0, a_size[1], background_rect.h):
                 screen.blit(background, (x, y))

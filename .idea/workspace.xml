@@ -3,10 +3,30 @@
   <component name="ChangeListManager">
     <list default="true" id="dab9ea22-3a5c-4b21-98b5-583cefa679e1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.6/level/randdiamondfloor.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.6/level/randdiamondfloor.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonstersTable.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.6/MonstersTable.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.6/game.exe" beforeDir="false" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.6/game.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.6/level/arena.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.6/level/randdiamondfloor.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.6/level/test1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.6/lib/library.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.6/lib/library.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/exe.win-amd64-3.6/lib/scripts/MonstersTable.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/Castle of the Python-0.3-amd64.msi" beforeDir="false" afterPath="$PROJECT_DIR$/dist/Castle of the Python-0.3-amd64.msi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/level/randdiamondfloor.txt" beforeDir="false" afterPath="$PROJECT_DIR$/level/randdiamondfloor.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/level/arena.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/level/randdiamondfloor.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/level/test1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/root.py" beforeDir="false" afterPath="$PROJECT_DIR$/globals.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/MonstersTable.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/databases/MonsterDBInitializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/databases/MonsterDBInitializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/mapgen/level.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/mapgen/level.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/mapgen/map.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/mapgen/map.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/objects/characters.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/objects/characters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/objects/objects.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/objects/objects.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/objects/obstacles.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/objects/obstacles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/objects/weapons.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/objects/weapons.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trash/testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/trash/testing.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,28 +40,8 @@
       <file leaf-file-name="game.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="169" column="26" selection-start-line="169" selection-start-column="26" selection-end-line="169" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="draw_text.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/windows/draw_text.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="50" column="51" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="moving_objects.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/objects/moving_objects.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="238">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -49,29 +49,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testing.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/trash/testing.py">
+      <file leaf-file-name="MonsterDBInitializer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/databases/MonsterDBInitializer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="458">
+              <caret line="64" column="8" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="messages.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/windows/text_windows/messages.py">
+      <file leaf-file-name="globals.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/globals.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="root.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/root.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="136">
+              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,8 +73,8 @@
       <file leaf-file-name="map.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/mapgen/map.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+            <state relative-caret-position="7310">
+              <caret line="430" selection-start-line="430" selection-end-line="430" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -91,11 +85,8 @@
       <file leaf-file-name="level.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/mapgen/level.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -103,10 +94,22 @@
       <file leaf-file-name="setup.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            <state relative-caret-position="136">
+              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="temps.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/temps.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -127,18 +130,19 @@
       <find>lth</find>
       <find>True True True</find>
       <find>True True</find>
-      <find>print</find>
       <find>x_inc</find>
       <find>self.direction</find>
       <find>door</find>
       <find>player_moves</find>
       <find>projectiles</find>
       <find>time</find>
-      <find>MonsterDB</find>
       <find>world</find>
       <find>sys</find>
       <find>root</find>
       <find>start</find>
+      <find>MonsterDB</find>
+      <find>monster_list</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -147,9 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scripts/characters.py" />
-        <option value="$PROJECT_DIR$/scripts/mapgen/mapgen.py" />
-        <option value="$PROJECT_DIR$/scripts/testfloor.py" />
         <option value="$PROJECT_DIR$/scripts/mapgen/add+hallways old.py" />
         <option value="$PROJECT_DIR$/scripts/floorbuild/arenafloor.py" />
         <option value="$PROJECT_DIR$/trash/hallwaysDOESNTWORK.py" />
@@ -180,10 +181,7 @@
         <option value="$PROJECT_DIR$/scripts/setup.py" />
         <option value="$PROJECT_DIR$/scripts/base_dir.py" />
         <option value="$PROJECT_DIR$/scripts/mapgen/floor_generator.py" />
-        <option value="$PROJECT_DIR$/scripts/databases/MonsterDBInitializer.py" />
         <option value="$PROJECT_DIR$/root.py" />
-        <option value="$PROJECT_DIR$/scripts/mapgen/map.py" />
-        <option value="$PROJECT_DIR$/scripts/mapgen/level.py" />
         <option value="$PROJECT_DIR$/scripts/objects/objects.py" />
         <option value="$PROJECT_DIR$/scripts/objects/obstacles.py" />
         <option value="$PROJECT_DIR$/scripts/objects/weapons.py" />
@@ -192,16 +190,22 @@
         <option value="$PROJECT_DIR$/scripts/windows/text_windows/text_window_wrapper.py" />
         <option value="$PROJECT_DIR$/scripts/windows/text_windows/draw_text.py" />
         <option value="$PROJECT_DIR$/scripts/windows/window.py" />
-        <option value="$PROJECT_DIR$/trash/testing.py" />
         <option value="$PROJECT_DIR$/scripts/windows/text_window.py" />
         <option value="$PROJECT_DIR$/scripts/windows/draw_text.py" />
         <option value="$PROJECT_DIR$/scripts/windows/text_windows/messages.py" />
+        <option value="$PROJECT_DIR$/scripts/databases/MonsterDBInitializer.py" />
+        <option value="$PROJECT_DIR$/level/configuration.conf" />
+        <option value="$PROJECT_DIR$/trash/testing.py" />
         <option value="$PROJECT_DIR$/game.py" />
+        <option value="$PROJECT_DIR$/globals.py" />
+        <option value="$PROJECT_DIR$/scripts/mapgen/level.py" />
+        <option value="$PROJECT_DIR$/scripts/mapgen/map.py" />
+        <option value="$PROJECT_DIR$/temps.py" />
         <option value="$PROJECT_DIR$/setup.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="430" />
     <option name="y" value="130" />
     <option name="width" value="1440" />
@@ -213,6 +217,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -223,65 +228,12 @@
             <path>
               <item name="CastleofthePython7062018p2" type="b2602c69:ProjectViewProjectNode" />
               <item name="CastleofthePython7062018p2" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CastleofthePython7062018p2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CastleofthePython7062018p2" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CastleofthePython7062018p2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CastleofthePython7062018p2" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="floorbuild" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CastleofthePython7062018p2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CastleofthePython7062018p2" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="mapgen" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CastleofthePython7062018p2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CastleofthePython7062018p2" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="objects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CastleofthePython7062018p2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CastleofthePython7062018p2" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CastleofthePython7062018p2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CastleofthePython7062018p2" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="windows" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CastleofthePython7062018p2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CastleofthePython7062018p2" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="windows" type="462c0819:PsiDirectoryNode" />
-              <item name="text_windows" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CastleofthePython7062018p2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CastleofthePython7062018p2" type="462c0819:PsiDirectoryNode" />
-              <item name="trash" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CastleofthePython7062018p2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CastleofthePython7062018p2" type="462c0819:PsiDirectoryNode" />
-              <item name="windows" type="462c0819:PsiDirectoryNode" />
+              <item name="monsters" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -289,15 +241,15 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Marcus\Desktop\CastleofthePython\scripts\floorbuild" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Marcus\Desktop\CastleofthePython7062018p2" />
       <recent name="C:\Users\Marcus\Desktop\CastleofthePython7062018p2\scripts\windows" />
       <recent name="C:\Users\Marcus\Desktop\CastleofthePython7062018p2\scripts\windows\text_windows" />
       <recent name="C:\Users\Marcus\Desktop\CastleofthePython7062018p2\scripts\windows\" />
       <recent name="C:\Users\Marcus\Desktop\CastleofthePython7062018p2\scripts\mapgen" />
-      <recent name="C:\Users\Marcus\Desktop\CastleofthePython7062018p2\scripts" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Marcus\Desktop\CastleofthePython\scripts\floorbuild" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -352,19 +304,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20469798" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21275167" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="R Packages" order="4" />
-      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="right" id="R Packages" order="3" />
+      <window_info anchor="right" id="R Graphics" order="4" weight="0.0" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.51543623" side_tool="true" weight="0.16809116" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48456377" weight="0.3105413" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" order="9" sideWeight="0.49791667" weight="0.35935706" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48456377" weight="0.3105413" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32621083" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4921875" weight="0.3988604" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.18233618" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4921875" weight="0.3988604" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -375,23 +328,23 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48489583" weight="0.22344828" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1829427" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48456377" visible="true" weight="0.3105413" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21275167" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="4" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="R Graphics" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49947917" weight="0.32827586" />
-      <window_info anchor="right" id="R Packages" order="4" />
-      <window_info anchor="bottom" id="Python Console" order="9" sideWeight="0.49791667" weight="0.35935706" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4921875" weight="0.39954075" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32965517" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5151042" side_tool="true" weight="0.2858783" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49947917" weight="0.32763532" />
+      <window_info anchor="right" id="R Packages" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4921875" weight="0.3988604" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.18233618" />
+      <window_info anchor="bottom" id="Python Console" order="9" sideWeight="0.49791667" weight="0.35935706" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.51543623" side_tool="true" weight="0.16809116" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -405,22 +358,16 @@
           <url>file://$PROJECT_DIR$/scripts/objects/moving_objects.py</url>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/game.py</url>
+          <line>99</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="12" />
+      <option name="time" value="14" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/mapgen/add+hallways old.py" />
-    <entry file="file://$PROJECT_DIR$/level/test2.txt" />
-    <entry file="file://$PROJECT_DIR$/scripts/floorbuild/testfloor.py" />
-    <entry file="file://$PROJECT_DIR$/scripts/mapgen/ascii.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/level/test.txt" />
     <entry file="file://$PROJECT_DIR$/level/test0.txt" />
     <entry file="file://$PROJECT_DIR$/level/test5.txt" />
     <entry file="file://$PROJECT_DIR$/scripts/tools/writedict.py" />
@@ -491,13 +438,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/level/test1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="86" selection-start-column="86" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/level/test1.txt" />
     <entry file="file://$PROJECT_DIR$/trash/grid_vision.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
@@ -551,13 +492,6 @@
     <entry file="file://$PROJECT_DIR$/scripts/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/databases/MonsterDBInitializer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/objects/objects.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-46">
@@ -579,13 +513,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/floorbuild/randfloor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/objects/characters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1469">
@@ -593,40 +520,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/mapgen/level.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/tools/textwrapping.py" />
     <entry file="file://$PROJECT_DIR$/scripts/windows/window.py" />
     <entry file="file://$PROJECT_DIR$/scripts/windows/text_window.py" />
-    <entry file="file://$PROJECT_DIR$/trash/testing.py">
+    <entry file="file://$PROJECT_DIR$/scripts/windows/draw_text.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/root.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/mapgen/map.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="402">
+          <caret line="50" column="51" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -639,13 +539,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/windows/draw_text.py">
+    <entry file="file://$PROJECT_DIR$/scripts/floorbuild/randfloor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="50" column="51" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -656,17 +553,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/level/configuration.conf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/databases/MonsterDBInitializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="64" column="8" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trash/testing.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/mapgen/level.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monsters/mask.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monsters/goblin.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monsters/cerberus.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/mapgen/map.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7310">
+          <caret line="430" selection-start-line="430" selection-end-line="430" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="169" column="26" selection-start-line="169" selection-start-column="26" selection-end-line="169" selection-end-column="26" />
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/globals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        <state relative-caret-position="136">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
